@@ -7,7 +7,7 @@ interface UserCardProps {
   user: User;
 }
 
-const UserCard: React.FC<UserCardProps> = ({ user }) => {
+const UserCard = ({ user }: UserCardProps) => {
   const address = `${user.address.street}, ${user.address.city}, ${user.address.zipcode}`;
 
   return (

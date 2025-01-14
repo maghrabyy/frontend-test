@@ -7,7 +7,7 @@ import { RootState, AppDispatch } from "../redux/store";
 import { Searchbar, Button } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const UserList: React.FC = () => {
+const UserList = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { data } = useSelector((state: RootState) => state.users);
   const [searchQuery, setSearchQuery] = useState("");
